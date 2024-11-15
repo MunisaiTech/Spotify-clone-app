@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.sidebar{
+    width: 350px;
+    background: rgba(0, 0, 0, 0.797);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+}
+.sidebar-nav{
+    background:#111111;
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.sidebar-nav ul {
+    list-style: none;
+    
+}
+.sidebar-nav ul li{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.sidebar-nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sidebar-nav ul li a i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.libray::after
+{
+    content: "+";
+    float: right;
+}
+.scroll{
+    background: #2e2e2e;
+    padding: 30px 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.scrollbar1{
+    height: 120px;
+    overflow-y: auto;
+}
+.scrollbar1::-webkit-scrollbar{
+    background: transparent;
+}
+.scrollbar1::-webkit-scrollbar-thumb{
+    background:transparent;
+    width: 10px;
+}
+.scrollbar1:hover::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+    width: 5px;
+}
+.scroll h4{
+    color: white;
+    font-size: 17px;    
+}
+.scroll p{
+    color: white;
+    font-size: 14px;  
+    margin: 10px 0;  
+}
+.scroll button{
+    padding: 7px 20px;
+    border-radius: 20px;
+    font-weight: 600px;
+}
+.list ul li a{
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.863);
+    margin:5px;
+    font-size: 14px;
+}
+.list ul li{
+    margin-top: 7px;
+}
+.list{
+    margin-top: 90px;
+}
+.list ul li .special:hover{
+    text-decoration: underline;
+}
+.btn{
+    padding: 20px 10px;
+
+}
+.btn button a{
+    text-decoration: none;
+}
+.btn button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.509);
+    padding: 10px 15px;
+    border-radius:20px;
+}
+.btn button span{
+    color: white;
+    font-weight:bold;
+
+}
+.btn button:hover{
+    border-radius: 1px solid white;
+    padding: 11px 16px;
+    box-shadow: 0px 0px 3px white;
+}
+.mainsection{
+    margin-left:350px;
+    background: #2e2e2e4f;
+    height: 100vh;
+    overflow:auto;
+}
+.mainsection .top-nav{
+    background:#030303;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainsection .top-nav button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+.mainsection .top-nav button{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.mainsection .top-nav .account a{
+    text-decoration: none;
+    color: white;
+}
+.mainsection .top-nav .account .log{
+    background: white;
+    color: black;
+    font-size: 22px;
+    border-radius: 30px;
+    padding: 5px 7px;
+
+}
+.mainsection .top-nav .account .log a{
+    color: black;
+    font-size: 20px;
+}
+.mainsection .top-nav .special-btn{
+    background: #2e2e2e;
+    padding:10px 400px 10px 10px;
+    border-radius: 20px;
+}
+.mainsection .top-nav .special-btn:hover{
+    border: 0.5px solid rgba(255, 255, 255, 0.463);
+    background: #2e2e2ecb;
+    cursor: pointer;
+}
+.mainsection .top-nav .special-btn span{
+    margin-left: 15px;
+    color:rgba(255, 255, 255, 0.703);
+}
+.playlist{
+    padding: 20px 40px;
+}
+.playlist h2{
+    color: whitesmoke;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.playlist .card{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    overflow: hidden;
+}
+.playlist .card .item{
+    width: 190px;
+    min-width: 140px;
+    cursor: pointer;
+    padding: 10px;
+}
+.playlist .card .item:hover{
+    background: #1a1919;
+}
+.playlist .card .item img{
+   width: 100%;
+   border-radius: 5px;
+}
+.playlist .item p{
+    color:rgba(255, 255, 255, 0.703);
+}
+.playlist .hed3{
+    margin-top: 20px;
+    cursor: pointer;
+}
+.playlist .ply-btn{
+    position: relative;
+}
+.playlist .ply-btn i{
+    position: absolute;
+    background-color:rgba(50, 204, 50, 0.808);
+    padding: 15px;
+    border-radius: 100%;
+    right:7px;
+    top: -55px;
+    opacity: 0;
+    font-size: 20px;
+}
+.playlist .card .item:hover .ply-btn i{
+    opacity: 1;
+}
+.playlist .card1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: hidden;
+}
+.playlist .card1 .item{
+    width: 190px;
+    cursor: pointer;
+    padding: 10px;
+}
+.playlist .card1 .item img{
+    width: 100%;
+    border-radius: 50%;
+ }
+ .playlist .card1 #diff img{
+    width: 170px;
+    
+ }
+ .playlist .card1 .item  h4{
+    color: rgba(255, 255, 255, 0.913);
+
+
+ } 
+ .playlist .flt{
+    margin-top: 10px;
+ }
+ .playlist .flt p{
+    float: right;
+ }
+ .playlist .flt>p{
+    color: white;
+    
+ }
+ .playlist .flt>p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+ }
+
+.footer-section {
+    padding: 20px 40px;
+}
+.footer-section .footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.footer-section .footer .footer-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.footer-section .footer .footer-links .footer-col{
+    margin: 0px 10px;
+}
+.footer-section .footer .footer-links h4{
+    color: white;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer-section .footer .footer-links ul li{
+    list-style: none;
+    margin: 12px 0px;
+}
+.footer-section .footer .footer-links ul li a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.703);
+    cursor: pointer;
+}
+.footer-section .footer .footer-links ul li a:hover{
+    text-decoration:underline;
+    color:white;
+    cursor: pointer;
+}
+.footer .social-links i{
+    color: white;
+    background-color: #353434;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0px 5px;
+}
+.footer .social-links i:hover{
+    background-color: #636262;
+}
+hr{
+    margin: 20px 40px;
+    border: 1px solid #353434;
+    margin-top: 30px;
+}
+.rights{
+    color:rgba(255, 255, 255, 0.703);
+    padding: 10px 40px 50px 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.preview{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right,#ae2896,blue);
+    padding: 15px 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+
+}
+.preview .text {
+    color: white;
+    font-size: 18px;
+}
+.preview .spl-btn{
+    padding: 9px 25px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-size: 17px;
+    font-weight:bold;
+
+    
+}
+
+
